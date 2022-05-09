@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; 
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#contenedorPadre{
+	margin: auto;
+	width: 90%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+	flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#sectionClima{
+	width: 100%;
+  height: 150px;
+	display: flex;
+  justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+  order: 1;
+}
+
+#temperatura{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  color: white;
+  margin: auto;
+  border-radius: 20px;
+  padding: 3%;
+  width: auto;
+  height: 100px;
+  font-weight: 700;
+}
+
+#resumen{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  color: white;
+  margin: auto;
+  border-radius: 20px;
+  padding: 3%;
+  width: auto;
+  height: 100px;
+  font-weight: 700;
+}
+
+#ubicacion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  color: white;
+  margin: auto;
+  border-radius: 20px;
+  padding: 3%;
+  width: auto;
+  height: 100px;
+  font-weight: 700;
+}
+
+#sectionCabecera{
+	width: 100%;
+  margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+  order: 2;
+}
+
+#titulos{
+	padding: 10px;
+	text-align: center;
+	margin-top: 5px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+	font-size: 1.5em;
+	color: #fff;
+  border-radius: 20px;
+}
+
+#botones{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#botonTipoPropiedad{
+  display: flex;
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#botonTipoPropiedad:hover{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#sectionPropiedades{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 3px;
+  padding: 10px;
+  order: 3;
+}
+
+#propiedades{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  align-items: center;
+  color: white;
+  margin-top: 0;
+  border-radius: 20px;
+  padding: 3%;
+  width: 100%;
+}
+
+.listarPropiedades{
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  margin: 2%;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.imgListarPropiedades img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.listarPropiedadInfo{
+  font-size: 14px;
+  text-align: left;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+#propPorTipo{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  color: white;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 3%;
+  width: 70%;
+}
+
+.propiedadPorTipo{
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  margin: 2%;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.imgPropiedad img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.propiedadInfo{
+  font-size: 14px;
+  text-align: left;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.botonVerde{
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botonRojo{
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#propiedadesEnAlquiler{
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  color: white;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 3%;
+  width: 30%;
+  height: auto;
+}
+
+#listaPropiedad{
+  margin: 20px auto;
+  padding: 10px, auto;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700; 
+}
+
+#listaTotalPropiedad{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 10px, auto;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700; 
+}
+
+.botonDelete{
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  padding: 2.5%;
+  background-image: url(../img/Delete.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#btnFormConsulta, #btnFormSubmit{
+  border-radius: 10px;
+  padding: 1%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btnFormConsulta:hover, #btnFormSubmit:hover {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: white;
+}
+
+#sectionFormulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  order: 4;
+}
+
+#formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  color: white;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 3%;
+  width: 100%;
+  height: auto;
+}
+
+.formTitulo{
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.formInput, .formLabel, textarea{
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.formInput, textArea{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+textArea{
+  max-height: 200px;
+}
+
+#footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	padding: 20px;
+  order: 5;
+}
+
+#informacion{
+  align-items: center;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.redesSociales{
+  padding: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.iconoRedes{
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.iconoRedes i{
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.iconoRedes:hover{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+@media screen and (max-width: 1200px){
+
+  #sectionPropiedades{
+    flex-direction: column;
+  }
+
+  #propPorTipo{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #propiedadesEnAlquiler{
+    width: 100%;
+  }
+
+  .botonDelete{
+    border-radius: 50%;
+    padding: 1.5%;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  #sectionClima{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #temperatura{
+    margin-top: 10px;
+    height: 40px;
+  }
+
+  #resumen{
+    margin-top: 10px;
+    height: 40px;
+  }
+
+  #ubicacion{
+    margin-top: 10px;
+    height: 40px;
+  }
+
+  #titulos{
+    font-size: 1em;
+  }
+
+  .listarPropiedades{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .propiedadPorTipo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #footer{
+    justify-content: center;
+  }
+
+}
+
+
+
+
+
+
+
+
